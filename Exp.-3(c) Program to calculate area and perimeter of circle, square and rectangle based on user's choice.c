@@ -21,10 +21,5 @@ int main()
     else if (choice==2)
     {
         printf("Enter the side of square:");
-        
-
     }
-    
-
-
  }
