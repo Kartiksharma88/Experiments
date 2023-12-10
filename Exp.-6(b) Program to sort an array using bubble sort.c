@@ -2,26 +2,23 @@
 int main()
 {
     int temp;
-    int arr[6]={13,52,23,64,59,86};
-    temp=0;
+    int arr[6]={23,34,54,28,65,11};
     for (int i = 0; i < 6; i++)
     {
-        for (int j = 0; j < 6; j++)
+        for (int j = i+1; j < 6; j++)
         {
-            if (arr[j]>arr[j+1])
+            if (arr[i]>arr[j])
             {
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-            }
-            
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            } 
         }
         
     }
     printf("Sorted array in ascending order: ");
-    for (int i = 0; i < 6; i++)
-    {
+     for (int i = 0; i < 6; i++)
+     {
         printf("%d ", arr[i]);
-    }
-    return 0;
+     }
 }
